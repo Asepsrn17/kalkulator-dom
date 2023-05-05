@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Web Calculator</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+	<div class="flex-container-column card">
+		<div class="display">
+			<span id="displayNumberHasil">0</span>
+			<input type="number" id="displayNumber1" placeholder="masukan nilai di sini..">
+			<input type="number" id="displayNumber2" placeholder="masukan nilai di sini..">
+		</div>
+		<div class="flex-container-row">
+			<div class="button operator increment">+</div>
+			<div class="button operator decrement">-</div>
+			<div class="button operator multiplication">*</div>
+			<div class="button operator division">/</div>
+		</div>
+		<div class="button-reset">
+			Reset
+		</div>
+	</div>
+
+	<div class="history card">
+		<div class="button-riwayat">Update Riwayat Penjumlahan</div>
+		<table>
+			<thead>
+				<tr>
+					<th>Angka Pertama</th>
+					<th>Operator</th>
+					<th>Angka Kedua</th>
+					<th>Hasil</th>
+				</tr>
+			</thead>
+			<tbody id="historyList"></tbody>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="assets/kalkulator.js"></script>
+</body>
+
+</html>
